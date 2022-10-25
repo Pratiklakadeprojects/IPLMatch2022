@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:background="@drawable/ipl_trophy"
+        tools:context=".view.MatchSimulaterActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:id="@+id/img_team1"
+            android:layout_margin="20dp"
+            app:civ_circle_background_color="@color/white"
+            app:civ_border_color="@color/purple_200"
+            android:src="@drawable/mumbai_logo"
+            app:civ_border_width="2dp"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textStyle="italic|bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:text="VS"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/img_team2"
+            android:layout_weight="1.2"
+            app:civ_circle_background_color="@color/white"
+            android:layout_margin="20dp"
+            app:civ_border_color="@color/purple_200"
+            android:src="@drawable/kkr_logo"
+            app:civ_border_width="2dp"/>
+    </LinearLayout>
+</layout>
